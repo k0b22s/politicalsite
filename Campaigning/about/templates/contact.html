@@ -1,0 +1,46 @@
+{% load static %}
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'standard.css' %}">
+    <meta charset="UTF-8">
+    <title>Contact details</title>
+</head>
+<body>
+<h1> Contact us</h1>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-11"></div>
+    <div class="col-md-1">
+      <div class="btn btn-dark ms-auto">
+        <a href="{% url 'about:home_page' %}">home</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="paragraph py- 2 pl-3">
+    To find out how you can help our cause or contribute in any way, please see below.
+    <br>
+    Any donations will be greatly appreciated.
+</p>
+<h3> BE THE CHANGE </h3>
+<br>
+<br>
+<div class="contact pl-3">
+    <ul>
+        Email: campaign@sjohnson.go
+        <br>
+        <br>
+        tel: 2345644678899
+        <br>
+        <br>
+        whatsapp: 2346752086
+    </ul>
+</div>
+
+
+</body>
+</html>
