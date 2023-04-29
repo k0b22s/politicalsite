@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>about package &mdash; Campaigning 00.00.01 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="author" title="About these documents" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Campaigning
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">about package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-about.admin">about.admin module</a></li>
+<li><a class="reference internal" href="#module-about.apps">about.apps module</a><ul>
+<li><a class="reference internal" href="#about.apps.AboutConfig"><code class="docutils literal notranslate"><span class="pre">AboutConfig</span></code></a><ul>
+<li><a class="reference internal" href="#about.apps.AboutConfig.default_auto_field"><code class="docutils literal notranslate"><span class="pre">AboutConfig.default_auto_field</span></code></a></li>
+<li><a class="reference internal" href="#about.apps.AboutConfig.name"><code class="docutils literal notranslate"><span class="pre">AboutConfig.name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-about.models">about.models module</a><ul>
+<li><a class="reference internal" href="#about.models.CustomUserCreationForm"><code class="docutils literal notranslate"><span class="pre">CustomUserCreationForm</span></code></a><ul>
+<li><a class="reference internal" href="#about.models.CustomUserCreationForm.Meta"><code class="docutils literal notranslate"><span class="pre">CustomUserCreationForm.Meta</span></code></a><ul>
+<li><a class="reference internal" href="#about.models.CustomUserCreationForm.Meta.fields"><code class="docutils literal notranslate"><span class="pre">CustomUserCreationForm.Meta.fields</span></code></a></li>
+<li><a class="reference internal" href="#about.models.CustomUserCreationForm.Meta.model"><code class="docutils literal notranslate"><span class="pre">CustomUserCreationForm.Meta.model</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#about.models.CustomUserCreationForm.base_fields"><code class="docutils literal notranslate"><span class="pre">CustomUserCreationForm.base_fields</span></code></a></li>
+<li><a class="reference internal" href="#about.models.CustomUserCreationForm.declared_fields"><code class="docutils literal notranslate"><span class="pre">CustomUserCreationForm.declared_fields</span></code></a></li>
+<li><a class="reference internal" href="#about.models.CustomUserCreationForm.media"><code class="docutils literal notranslate"><span class="pre">CustomUserCreationForm.media</span></code></a></li>
+<li><a class="reference internal" href="#about.models.CustomUserCreationForm.save"><code class="docutils literal notranslate"><span class="pre">CustomUserCreationForm.save()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#about.models.Thoughts"><code class="docutils literal notranslate"><span class="pre">Thoughts</span></code></a><ul>
+<li><a class="reference internal" href="#about.models.Thoughts.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Thoughts.DoesNotExist</span></code></a></li>
+<li><a class="reference internal" href="#about.models.Thoughts.MultipleObjectsReturned"><code class="docutils literal notranslate"><span class="pre">Thoughts.MultipleObjectsReturned</span></code></a></li>
+<li><a class="reference internal" href="#about.models.Thoughts.body"><code class="docutils literal notranslate"><span class="pre">Thoughts.body</span></code></a></li>
+<li><a class="reference internal" href="#about.models.Thoughts.created_at"><code class="docutils literal notranslate"><span class="pre">Thoughts.created_at</span></code></a></li>
+<li><a class="reference internal" href="#about.models.Thoughts.get_next_by_created_at"><code class="docutils literal notranslate"><span class="pre">Thoughts.get_next_by_created_at()</span></code></a></li>
+<li><a class="reference internal" href="#about.models.Thoughts.get_previous_by_created_at"><code class="docutils literal notranslate"><span class="pre">Thoughts.get_previous_by_created_at()</span></code></a></li>
+<li><a class="reference internal" href="#about.models.Thoughts.id"><code class="docutils literal notranslate"><span class="pre">Thoughts.id</span></code></a></li>
+<li><a class="reference internal" href="#about.models.Thoughts.objects"><code class="docutils literal notranslate"><span class="pre">Thoughts.objects</span></code></a></li>
+<li><a class="reference internal" href="#about.models.Thoughts.title"><code class="docutils literal notranslate"><span class="pre">Thoughts.title</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-about.tests">about.tests module</a></li>
+<li><a class="reference internal" href="#module-about.urls">about.urls module</a></li>
+<li><a class="reference internal" href="#module-about.views">about.views module</a><ul>
+<li><a class="reference internal" href="#about.views.about_me"><code class="docutils literal notranslate"><span class="pre">about_me()</span></code></a></li>
+<li><a class="reference internal" href="#about.views.contact"><code class="docutils literal notranslate"><span class="pre">contact()</span></code></a></li>
+<li><a class="reference internal" href="#about.views.home_page"><code class="docutils literal notranslate"><span class="pre">home_page()</span></code></a></li>
+<li><a class="reference internal" href="#about.views.join_us"><code class="docutils literal notranslate"><span class="pre">join_us()</span></code></a></li>
+<li><a class="reference internal" href="#about.views.logged_in"><code class="docutils literal notranslate"><span class="pre">logged_in()</span></code></a></li>
+<li><a class="reference internal" href="#about.views.login"><code class="docutils literal notranslate"><span class="pre">login()</span></code></a></li>
+<li><a class="reference internal" href="#about.views.thoughts"><code class="docutils literal notranslate"><span class="pre">thoughts()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-about">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Campaigning</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">about package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/about.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="about-package">
+<h1>about package<a class="headerlink" href="#about-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.migrations.html">about.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="about.migrations.html#module-about.migrations.0001_initial">about.migrations.0001_initial module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="about.migrations.html#about.migrations.0001_initial.Migration"><code class="docutils literal notranslate"><span class="pre">Migration</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="about.migrations.html#about.migrations.0001_initial.Migration.dependencies"><code class="docutils literal notranslate"><span class="pre">Migration.dependencies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="about.migrations.html#about.migrations.0001_initial.Migration.initial"><code class="docutils literal notranslate"><span class="pre">Migration.initial</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="about.migrations.html#about.migrations.0001_initial.Migration.operations"><code class="docutils literal notranslate"><span class="pre">Migration.operations</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="about.migrations.html#module-about.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-about.admin">
+<span id="about-admin-module"></span><h2>about.admin module<a class="headerlink" href="#module-about.admin" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-about.apps">
+<span id="about-apps-module"></span><h2>about.apps module<a class="headerlink" href="#module-about.apps" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="about.apps.AboutConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">about.apps.</span></span><span class="sig-name descname"><span class="pre">AboutConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/apps.html#AboutConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.apps.AboutConfig" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.apps.AboutConfig.default_auto_field">
+<span class="sig-name descname"><span class="pre">default_auto_field</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'django.db.models.BigAutoField'</span></em><a class="headerlink" href="#about.apps.AboutConfig.default_auto_field" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.apps.AboutConfig.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'about'</span></em><a class="headerlink" href="#about.apps.AboutConfig.name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-about.models">
+<span id="about-models-module"></span><h2>about.models module<a class="headerlink" href="#module-about.models" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="about.models.CustomUserCreationForm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">about.models.</span></span><span class="sig-name descname"><span class="pre">CustomUserCreationForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/models.html#CustomUserCreationForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.models.CustomUserCreationForm" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">UserCreationForm</span></code></p>
+<p>This module is for the creation of new users, registering on the site.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>email</strong> – Provides that form can’t validate without email field</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="about.models.CustomUserCreationForm.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/about/models.html#CustomUserCreationForm.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.models.CustomUserCreationForm.Meta" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – Creates new user</p></li>
+<li><p><strong>fields</strong> – Defines the input required to create a new user</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.models.CustomUserCreationForm.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('username',</span> <span class="pre">'email',</span> <span class="pre">'password1',</span> <span class="pre">'password2')</span></em><a class="headerlink" href="#about.models.CustomUserCreationForm.Meta.fields" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.models.CustomUserCreationForm.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#about.models.CustomUserCreationForm.Meta.model" title="Permalink to this definition"></a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">User</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.models.CustomUserCreationForm.base_fields">
+<span class="sig-name descname"><span class="pre">base_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'email':</span> <span class="pre">&lt;django.forms.fields.EmailField</span> <span class="pre">object&gt;,</span> <span class="pre">'password1':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password2':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'username':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#about.models.CustomUserCreationForm.base_fields" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.models.CustomUserCreationForm.declared_fields">
+<span class="sig-name descname"><span class="pre">declared_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'email':</span> <span class="pre">&lt;django.forms.fields.EmailField</span> <span class="pre">object&gt;,</span> <span class="pre">'password1':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;,</span> <span class="pre">'password2':</span> <span class="pre">&lt;django.forms.fields.CharField</span> <span class="pre">object&gt;}</span></em><a class="headerlink" href="#about.models.CustomUserCreationForm.declared_fields" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="about.models.CustomUserCreationForm.media">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">media</span></span><a class="headerlink" href="#about.models.CustomUserCreationForm.media" title="Permalink to this definition"></a></dt>
+<dd><p>Return all media required to render the widgets on this form.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="about.models.CustomUserCreationForm.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/models.html#CustomUserCreationForm.save"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.models.CustomUserCreationForm.save" title="Permalink to this definition"></a></dt>
+<dd><p>Save new user instance to database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user.email</strong> – Email adress associated with new user</p></li>
+<li><p><strong>commit</strong> – If True, new user is added to database</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Saved user instance</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="about.models.Thoughts">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">about.models.</span></span><span class="sig-name descname"><span class="pre">Thoughts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/models.html#Thoughts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.models.Thoughts" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>This module is for the admin of the site to add his/her thoughts.
+These thoughts will then get published on the site.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>title</strong> – String representation of post-title</p></li>
+<li><p><strong>body</strong> – String representation of post-body</p></li>
+<li><p><strong>created-at</strong> – DateTime representation of when post was created</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py exception">
+<dt class="sig sig-object py" id="about.models.Thoughts.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#about.models.Thoughts.DoesNotExist" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="about.models.Thoughts.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#about.models.Thoughts.MultipleObjectsReturned" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.models.Thoughts.body">
+<span class="sig-name descname"><span class="pre">body</span></span><a class="headerlink" href="#about.models.Thoughts.body" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.models.Thoughts.created_at">
+<span class="sig-name descname"><span class="pre">created_at</span></span><a class="headerlink" href="#about.models.Thoughts.created_at" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="about.models.Thoughts.get_next_by_created_at">
+<span class="sig-name descname"><span class="pre">get_next_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#about.models.Thoughts.get_next_by_created_at" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="about.models.Thoughts.get_previous_by_created_at">
+<span class="sig-name descname"><span class="pre">get_previous_by_created_at</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">field=&lt;django.db.models.fields.DateTimeField:</span> <span class="pre">created_at&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_next=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">**kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#about.models.Thoughts.get_previous_by_created_at" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.models.Thoughts.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#about.models.Thoughts.id" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.models.Thoughts.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#about.models.Thoughts.objects" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="about.models.Thoughts.title">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#about.models.Thoughts.title" title="Permalink to this definition"></a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-about.tests">
+<span id="about-tests-module"></span><h2>about.tests module<a class="headerlink" href="#module-about.tests" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-about.urls">
+<span id="about-urls-module"></span><h2>about.urls module<a class="headerlink" href="#module-about.urls" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-about.views">
+<span id="about-views-module"></span><h2>about.views module<a class="headerlink" href="#module-about.views" title="Permalink to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="about.views.about_me">
+<span class="sig-prename descclassname"><span class="pre">about.views.</span></span><span class="sig-name descname"><span class="pre">about_me</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/views.html#about_me"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.views.about_me" title="Permalink to this definition"></a></dt>
+<dd><p>Renders the about.html page when accessed on site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Returns about.html</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="about.views.contact">
+<span class="sig-prename descclassname"><span class="pre">about.views.</span></span><span class="sig-name descname"><span class="pre">contact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/views.html#contact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.views.contact" title="Permalink to this definition"></a></dt>
+<dd><p>This function renders the contact page when accessed on the site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Returns contact page html for user to look at</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="about.views.home_page">
+<span class="sig-prename descclassname"><span class="pre">about.views.</span></span><span class="sig-name descname"><span class="pre">home_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/views.html#home_page"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.views.home_page" title="Permalink to this definition"></a></dt>
+<dd><p>This function renders the home page, first page when on the site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Returns home page html for user to look at</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="about.views.join_us">
+<span class="sig-prename descclassname"><span class="pre">about.views.</span></span><span class="sig-name descname"><span class="pre">join_us</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/views.html#join_us"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.views.join_us" title="Permalink to this definition"></a></dt>
+<dd><p>This function is for new users wanting to sign up</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>form</strong> – Creates new user</p></li>
+<li><p><strong>form.save</strong> – saves new user to database</p></li>
+<li><p><strong>form.is_valid</strong> – Checks for user validation</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns html to thank user for registering, or returns register.html for re-registration</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="about.views.logged_in">
+<span class="sig-prename descclassname"><span class="pre">about.views.</span></span><span class="sig-name descname"><span class="pre">logged_in</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/views.html#logged_in"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.views.logged_in" title="Permalink to this definition"></a></dt>
+<dd><p>This function renders the logged_in.html, if user login was successfull</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – Httprequest object, representing current request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Returns logged_in.html page if user is successfully logged in</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="about.views.login">
+<span class="sig-prename descclassname"><span class="pre">about.views.</span></span><span class="sig-name descname"><span class="pre">login</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/views.html#login"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.views.login" title="Permalink to this definition"></a></dt>
+<dd><p>This function provides users with the option to log in, in order to access more on the site</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>HttpRequest</em>) – HttpResponse object returning request</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>if user is logged in, redirects to about.html. If wrong input, login.html is reloaded. else. user is directed to login.html</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="about.views.thoughts">
+<span class="sig-prename descclassname"><span class="pre">about.views.</span></span><span class="sig-name descname"><span class="pre">thoughts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/about/views.html#thoughts"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#about.views.thoughts" title="Permalink to this definition"></a></dt>
+<dd><p>This function renders the thought page, cantaining all the hought-posts added by admin</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>thoughts</strong> – Returns thoughts in chronological order</p></li>
+<li><p><strong>if.request.user.is_authenticated</strong> – Checks if user is logged in before being able to access the page</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>thoughts.html if user is authenticated, otherwise not_logged_in.html if usern isn’t</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>HttpResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-about">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-about" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Kobus.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
